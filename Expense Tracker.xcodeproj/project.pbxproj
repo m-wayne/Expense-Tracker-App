@@ -185,7 +185,7 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
-		102CDF31293A87C20054B973 /* CustomerPageController */ = {
+		102CDF31293A87C20054B973 /* CustomPageController */ = {
 			isa = PBXGroup;
 			children = (
 				102CDF32293A87D70054B973 /* CustomPageController.swift */,
@@ -195,7 +195,7 @@
 				102CDF37293A87E40054B973 /* InfiniteDrawer.swift */,
 				102CDF38293A87E40054B973 /* InfiniteScrollingDrawer.swift */,
 			);
-			path = CustomerPageController;
+			path = CustomPageController;
 			sourceTree = "<group>";
 		};
 		1033FC132B8148650039C246 /* SwiftUI CharView */ = {
@@ -380,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				1033FC132B8148650039C246 /* SwiftUI CharView */,
-				102CDF31293A87C20054B973 /* CustomerPageController */,
+				102CDF31293A87C20054B973 /* CustomPageController */,
 				1065E9EE28A6953C00EA17E9 /* AlertView */,
 				103B9FB428748C49004A91A5 /* Custom TableView */,
 				10A8872D27F2072B0001794B /* Cell */,
