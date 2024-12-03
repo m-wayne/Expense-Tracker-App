@@ -76,6 +76,16 @@
 		10FE42EF2882A61100D7C372 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE42EE2882A61100D7C372 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1A4B4BC52CFE995500A64D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10EEDF7B27CD05AD00BC03D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10EEDF8227CD05AD00BC03D3;
+			remoteInfo = "Expense Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1008990A27D8C2E600A94B4F /* HeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderVC.swift; sourceTree = "<group>"; };
 		1008990D27D9E95500A94B4F /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
@@ -145,7 +155,12 @@
 		10F3E166282C3DED0071942B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		10FE42EC2882A5C200D7C372 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		10FE42EE2882A61100D7C372 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1A4B4BBF2CFE995500A64D11 /* Expense Tracker UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expense Tracker UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1A4B4BC02CFE995500A64D11 /* Expense Tracker UI Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Expense Tracker UI Tests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		10EEDF8027CD05AD00BC03D3 /* Frameworks */ = {
@@ -153,6 +168,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				101134E528D316B900A58F4D /* Charts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4B4BBC2CFE995500A64D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				10EEDF8527CD05AD00BC03D3 /* Expense Tracker */,
+				1A4B4BC02CFE995500A64D11 /* Expense Tracker UI Tests */,
 				10EEDF8427CD05AD00BC03D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -346,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				10EEDF8327CD05AD00BC03D3 /* Expense Tracker.app */,
+				1A4B4BBF2CFE995500A64D11 /* Expense Tracker UI Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,6 +488,29 @@
 			productReference = 10EEDF8327CD05AD00BC03D3 /* Expense Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A4B4BBE2CFE995500A64D11 /* Expense Tracker UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4B4BC72CFE995500A64D11 /* Build configuration list for PBXNativeTarget "Expense Tracker UI Tests" */;
+			buildPhases = (
+				1A4B4BBB2CFE995500A64D11 /* Sources */,
+				1A4B4BBC2CFE995500A64D11 /* Frameworks */,
+				1A4B4BBD2CFE995500A64D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A4B4BC62CFE995500A64D11 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1A4B4BC02CFE995500A64D11 /* Expense Tracker UI Tests */,
+			);
+			name = "Expense Tracker UI Tests";
+			packageProductDependencies = (
+			);
+			productName = "Expense Tracker UI Tests";
+			productReference = 1A4B4BBF2CFE995500A64D11 /* Expense Tracker UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -471,11 +518,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					10EEDF8227CD05AD00BC03D3 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					1A4B4BBE2CFE995500A64D11 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 10EEDF8227CD05AD00BC03D3;
 					};
 				};
 			};
@@ -496,6 +547,7 @@
 			projectRoot = "";
 			targets = (
 				10EEDF8227CD05AD00BC03D3 /* Expense Tracker */,
+				1A4B4BBE2CFE995500A64D11 /* Expense Tracker UI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -508,6 +560,13 @@
 				10EEDF9327CD05AD00BC03D3 /* LaunchScreen.storyboard in Resources */,
 				1082FE0F28058E5700538FFE /* ProfileHeaderView.xib in Resources */,
 				10EEDF9027CD05AD00BC03D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4B4BBD2CFE995500A64D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +643,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A4B4BBB2CFE995500A64D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A4B4BC62CFE995500A64D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10EEDF8227CD05AD00BC03D3 /* Expense Tracker */;
+			targetProxy = 1A4B4BC52CFE995500A64D11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		10EEDF9127CD05AD00BC03D3 /* LaunchScreen.storyboard */ = {
@@ -782,6 +856,51 @@
 			};
 			name = Release;
 		};
+		1A4B4BC82CFE995500A64D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scribd.docs.Expense-Tracker-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Expense Tracker";
+			};
+			name = Debug;
+		};
+		1A4B4BC92CFE995500A64D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scribd.docs.Expense-Tracker-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Expense Tracker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -799,6 +918,15 @@
 			buildConfigurations = (
 				10EEDF9827CD05AD00BC03D3 /* Debug */,
 				10EEDF9927CD05AD00BC03D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4B4BC72CFE995500A64D11 /* Build configuration list for PBXNativeTarget "Expense Tracker UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4B4BC82CFE995500A64D11 /* Debug */,
+				1A4B4BC92CFE995500A64D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
